@@ -1,0 +1,66 @@
+ul#navigation li.external:hover .icon {
+	color: rgb(3, 204, 133);
+}
+ul#navigation li.currentmenu .icon {
+	color: rgb(3, 204, 133);
+}
+.ul-boxed li {
+	border-left-color: rgb(3, 204, 133);
+}
+ul.ul-card li .dy .year {
+	background-color: rgb(3, 204, 133);
+}
+ul.ul-dates div.dates span {
+	background-color: rgb(3, 204, 133);
+}
+ul.timeline li .date {
+	background: rgb(3, 204, 133);
+}
+ul.timeline li .data {
+	border-left-color: rgb(3, 204, 133);
+}
+.ul-withdetails li .imageoverlay {
+	background: rgb(3, 204, 133);
+}
+.cd-dropdown.cd-active > span {
+	color: rgb(3, 204, 133);
+}
+.cd-dropdown.cd-active ul li span:hover {
+	background: rgb(3, 204, 133);
+}
+.pitems .pubmain .pubassets {
+	border-top-color: rgb(3, 204, 133);
+}
+.pitems .pubmain .pubassets a:hover {
+	background: rgb(3, 204, 133);
+}
+.pitems .pubmain .pubassets a:focus {
+	background: rgb(3, 204, 133);
+}
+.pitems .pubmain .pubassets a.pubcollapse {
+	background: rgb(3, 204, 133);
+}
+.contact-office .icon-huge {
+	color: rgb(3, 204, 133);
+}
+.contact-lab .icon-huge {
+	color: rgb(3, 204, 133);
+}
+ul.ul-card li .dy .degree {
+	background-color: rgb(3, 187, 122);
+}
+ul.ul-dates div.dates span:last-child {
+	background-color: rgb(3, 187, 122);
+}
+ul.timeline li.open .circle {
+	background-color: rgb(3, 187, 122);
+}
+ul.timeline li.open .data {
+	border-color: rgb(3, 187, 122);
+}
+#labp-heads-wrap {
+	background-color: rgb(3, 187, 122);
+}
+#labp-heads-wrap::after {
+	border-top-color: rgb(3, 187, 122);
+}

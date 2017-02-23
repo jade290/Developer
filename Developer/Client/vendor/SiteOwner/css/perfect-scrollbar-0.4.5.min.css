@@ -1,0 +1,60 @@
+.ps-container .ps-scrollbar-x-rail {
+	transition:background-color 0.2s linear, opacity 0.2s linear; height: 8px; bottom: 3px; display: none; position: absolute; opacity: 0; -webkit-transition: background-color.2s linear, opacity .2s linear; -moz-transition: background-color .2s linear, opacity .2s linear; -o-transition: background-color .2s linear, opacity .2s linear;
+}
+.ps-container:hover .ps-scrollbar-x-rail {
+	opacity: 0.6;
+}
+.hover.ps-container .ps-scrollbar-x-rail {
+	opacity: 0.6;
+}
+.ps-container .ps-scrollbar-x-rail:hover {
+	opacity: 0.9; background-color: rgb(238, 238, 238);
+}
+.ps-container .hover.ps-scrollbar-x-rail {
+	opacity: 0.9; background-color: rgb(238, 238, 238);
+}
+.ps-container .in-scrolling.ps-scrollbar-x-rail {
+	opacity: 0.9;
+}
+.ps-container .ps-scrollbar-y-rail {
+	transition:background-color 0.2s linear, opacity 0.2s linear; width: 8px; right: 3px; position: absolute; opacity: 0; -webkit-transition: background-color.2s linear, opacity .2s linear; -moz-transition: background-color .2s linear, opacity .2s linear; -o-transition: background-color .2s linear, opacity .2s linear;
+}
+.ps-container:hover .ps-scrollbar-y-rail {
+	opacity: 0.6;
+}
+.hover.ps-container .ps-scrollbar-y-rail {
+	opacity: 0.6;
+}
+.ps-container .ps-scrollbar-y-rail:hover {
+	
+}
+.ps-container .hover.ps-scrollbar-y-rail {
+	
+}
+.ps-container .in-scrolling.ps-scrollbar-y-rail {
+	opacity: 0.9;
+}
+.ps-container .ps-scrollbar-x {
+	transition:background-color 0.2s linear; height: 8px; bottom: 0px; position: absolute; background-color: rgb(170, 170, 170); -webkit-transition: background-color.2s linear; -moz-transition: background-color .2s linear; -o-transition: background-color .2s linear;
+}
+.ie6.ps-container .ps-scrollbar-x {
+	font-size: 0px;
+}
+.ps-container .ps-scrollbar-x-rail:hover .ps-scrollbar-x {
+	background-color: rgb(153, 153, 153);
+}
+.ps-container .hover.ps-scrollbar-x-rail .ps-scrollbar-x {
+	background-color: rgb(153, 153, 153);
+}
+.ps-container .ps-scrollbar-y {
+	transition:background-color 0.2s linear; width: 8px; right: 0px; position: absolute; background-color: rgb(170, 170, 170); -webkit-transition: background-color.2s linear; -moz-transition: background-color .2s linear; -o-transition: background-color .2s linear;
+}
+.ie.ps-container .ps-scrollbar-y {
+	font-size: 0px;
+}
+.ps-container .ps-scrollbar-y-rail:hover .ps-scrollbar-y {
+	
+}
+.ps-container .hover.ps-scrollbar-y-rail .ps-scrollbar-y {
+	
+}

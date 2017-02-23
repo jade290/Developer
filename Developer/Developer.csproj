@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{29AB75EE-09BA-4327-B4A4-6AE14DE839A8}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Developer</RootNamespace>
+    <AssemblyName>Developer</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Abstractions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Routing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.30506.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Providers">
+      <HintPath>..\packages\Microsoft.AspNet.Providers.Core.1.2\lib\net40\System.Web.Providers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.30506.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.30506.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.Tracing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Tracing.4.0.30506\lib\net40\System.Web.Http.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.30506\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-animate.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-animate.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-aria.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-aria.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-cookies.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-cookies.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-csp.css" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-loader.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-loader.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-message-format.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-message-format.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-messages.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-messages.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-mocks.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-resource.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-resource.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-route.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-route.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-sanitize.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-sanitize.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-scenario.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-touch.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-touch.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular.min.js" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\version.txt" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\css\bootstrap-theme.css" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\css\bootstrap-theme.min.css" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\css\bootstrap.css" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\css\bootstrap.min.css" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\affix.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\alert.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\bootstrap.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\bootstrap.min.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\button.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\carousel.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\collapse.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\dropdown.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\modal.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\npm.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\popover.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\scrollspy.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\tab.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\tooltip.js" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\js\transition.js" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\css\font-awesome.css" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\css\font-awesome.min.css" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\fonts\fontawesome-webfont.svg" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\HELP-US-OUT.txt" />
+    <Content Include="Client\vendor\jquery-2.1.4.js" />
+    <Content Include="Client\vendor\jquery-2.1.4.min.js" />
+    <Content Include="Client\vendor\jquery-ui-1.11.4.js" />
+    <Content Include="Client\vendor\jquery-ui-1.11.4.min.js" />
+    <Content Include="Client\vendor\jquery.validate.js" />
+    <Content Include="Client\vendor\jquery.validate.min.js" />
+    <Content Include="Client\vendor\jquery.validate.unobtrusive.js" />
+    <Content Include="Client\vendor\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Client\vendor\knockout-3.4.0.debug.js" />
+    <Content Include="Client\vendor\knockout-3.4.0.js" />
+    <Content Include="Client\vendor\modernizr-2.6.2.js" />
+    <Content Include="Client\vendor\respond.js" />
+    <Content Include="Client\vendor\respond.min.js" />
+    <Content Include="Client\vendor\SiteOwner\css\custom-style.css" />
+    <Content Include="Client\vendor\SiteOwner\css\default.css" />
+    <Content Include="Client\vendor\SiteOwner\css\magnific-popup.css" />
+    <Content Include="Client\vendor\SiteOwner\css\perfect-scrollbar-0.4.5.min.css" />
+    <Content Include="Client\vendor\SiteOwner\css\Site.css" />
+    <Content Include="Client\vendor\SiteOwner\css\style.css" />
+    <Content Include="Client\vendor\SiteOwner\Images\lori.JPG" />
+    <Content Include="Client\vendor\SiteOwner\js\custom-style.js" />
+    <Content Include="Client\vendor\SiteOwner\js\custom.js" />
+    <Content Include="Client\vendor\SiteOwner\js\jquery.carouFredSel-6.2.1-packed.js" />
+    <Content Include="Client\vendor\SiteOwner\js\jquery.dropdownit.js" />
+    <Content Include="Client\vendor\SiteOwner\js\jquery.mixitup.min.js" />
+    <Content Include="Client\vendor\SiteOwner\js\jquery.stellar.min.js" />
+    <Content Include="Client\vendor\SiteOwner\js\jquery.touchSwipe.min.js" />
+    <Content Include="Client\vendor\SiteOwner\js\magnific-popup.js" />
+    <Content Include="Client\vendor\SiteOwner\js\masonry.min.js" />
+    <Content Include="Client\vendor\SiteOwner\js\perfect-scrollbar-0.4.5.with-mousewheel.min.js" />
+    <Content Include="Client\vendor\SiteOwner\js\ScrollToPlugin.min.js" />
+    <Content Include="Client\vendor\SiteOwner\js\TweenMax.min.js" />
+    <Content Include="Client\vendor\tag-it-master\.gitignore" />
+    <Content Include="Client\vendor\tag-it-master\css\jquery.tagit.css" />
+    <Content Include="Client\vendor\tag-it-master\css\tagit.ui-zendesk.css" />
+    <Content Include="Client\vendor\tag-it-master\examples.html" />
+    <Content Include="Client\vendor\tag-it-master\js\tag-it.js" />
+    <Content Include="Client\vendor\tag-it-master\js\tag-it.min.js" />
+    <Content Include="Client\vendor\tag-it-master\prototype.js" />
+    <Content Include="Client\vendor\tag-it-master\_static\examples.css" />
+    <Content Include="Client\vendor\tag-it-master\_static\master.css" />
+    <Content Include="Client\vendor\tag-it-master\_static\reset.css" />
+    <Content Include="Client\vendor\tag-it-master\_static\screenshot.png" />
+    <Content Include="Client\vendor\tag-it-master\_static\subpage.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\01.jpg" />
+    <Content Include="Images\02.jpg" />
+    <Content Include="Images\03.jpg" />
+    <Content Include="Images\04.jpg" />
+    <Content Include="Images\05.jpg" />
+    <Content Include="Images\06%281%29.jpg" />
+    <Content Include="Images\06.jpg" />
+    <Content Include="Images\07.jpg" />
+    <Content Include="Images\08.jpg" />
+    <Content Include="Images\09.jpg" />
+    <Content Include="Images\10.jpg" />
+    <Content Include="Images\11.jpg" />
+    <Content Include="Images\12.jpg" />
+    <Content Include="Images\189.JPG" />
+    <Content Include="Images\20140425_211432.jpg" />
+    <Content Include="Images\20140916_094855.jpg" />
+    <Content Include="Images\20150320_142115.jpeg" />
+    <Content Include="Images\Aquarium.jpg" />
+    <Content Include="Images\favicon-fire.ico" />
+    <Content Include="Images\imagejpeg_3.jpg" />
+    <Content Include="Images\lab1.jpg" />
+    <Content Include="Images\lab2.jpg" />
+    <Content Include="Images\lab3.jpg" />
+    <Content Include="Images\lab4.jpg" />
+    <Content Include="Images\lab5.jpg" />
+    <Content Include="Images\lab6.jpg" />
+    <Content Include="Images\lori.JPG" />
+    <Content Include="Images\Mattress Firm.jpg" />
+    <Content Include="Images\Nobel_Prize.png" />
+    <Content Include="Images\p2.jpg" />
+    <Content Include="Images\p3.jpg" />
+    <Content Include="Images\p4.jpg" />
+    <Content Include="Images\p5.jpg" />
+    <Content Include="Images\photo.JPG" />
+    <Content Include="Images\~text.png" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-animate.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-aria.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-cookies.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-loader.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-message-format.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-messages.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-resource.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-route.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-sanitize.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular-touch.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\angular.min.js.map" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\errors.json" />
+    <Content Include="Client\vendor\angular-1.5.0-rc.0\version.json" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\css\bootstrap-theme.css.map" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\css\bootstrap-theme.min.css.map" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\css\bootstrap.css.map" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\css\bootstrap.min.css.map" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="Client\vendor\Bootstrap-3.3.6\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\fonts\fontawesome-webfont.eot" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\fonts\fontawesome-webfont.woff" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\fonts\FontAwesome.otf" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\animated.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\bordered-pulled.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\core.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\fixed-width.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\font-awesome.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\icons.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\larger.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\list.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\mixins.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\path.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\rotated-flipped.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\stacked.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\less\variables.less" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\font-awesome.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_animated.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_bordered-pulled.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_core.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_fixed-width.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_icons.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_larger.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_list.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_mixins.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_path.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_rotated-flipped.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_stacked.scss" />
+    <Content Include="Client\vendor\font-awesome-4.5.0\scss\_variables.scss" />
+    <Content Include="Client\vendor\jquery-2.1.4.min.map" />
+    <Content Include="Client\vendor\tag-it-master\.githooks\install.sh" />
+    <Content Include="Client\vendor\tag-it-master\.githooks\post-commit" />
+    <Content Include="Client\vendor\tag-it-master\.githooks\pre-commit" />
+    <Content Include="Client\vendor\tag-it-master\LICENSE" />
+    <Content Include="Client\vendor\tag-it-master\Makefile" />
+    <Content Include="Client\vendor\tag-it-master\README.markdown" />
+    <None Include="Properties\PublishProfiles\ToSite.pubxml" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Home\_Gallery.cshtml" />
+    <Content Include="Views\Home\_Research.cshtml" />
+    <Content Include="Views\Home\_Publications.cshtml" />
+    <Content Include="Views\Home\_Teaching.cshtml" />
+    <Content Include="Views\Home\_Contact.cshtml" />
+    <Content Include="Views\Home\_Resume.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19960</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19960/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>
